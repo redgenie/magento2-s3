@@ -84,11 +84,11 @@ class ConfigSetCommand extends \Symfony\Component\Console\Command\Command
     public function validate(InputInterface $input)
     {
         $errors = [];
-        if ($input->getOption('region')) {
-            if (!$this->helper->isValidRegion($input->getOption('region'))) {
-                $errors[] = sprintf('The region "%s" is invalid.', $input->getOption('region'));
-            }
-        }
+        // if ($input->getOption('region')) {
+        //     if (!$this->helper->isValidRegion($input->getOption('region'))) {
+        //         $errors[] = sprintf('The region "%s" is invalid.', $input->getOption('region'));
+        //     }
+        // }
         return $errors;
     }
 }
